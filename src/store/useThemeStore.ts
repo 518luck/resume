@@ -1,3 +1,26 @@
+/**
+ * 主题状态管理 Hook
+ *
+ * 提供主题切换功能，支持 'light' 和 'dark' 两种主题模式
+ *
+ * @author 蜻蜓大队长
+ *
+ * @example
+ * // 基本使用
+ * const { theme, toggle, setTheme } = useThemeStore()
+ *
+ * // 切换主题
+ * toggle()
+ *
+ * // 设置特定主题
+ * setTheme('dark')
+ *
+ * @returns {ThemeStore} 包含以下属性:
+ *   - theme: 当前主题 ('light' | 'dark')
+ *   - toggle: 切换主题的方法
+ *   - setTheme: 设置特定主题的方法
+ */
+
 import { create } from 'zustand'
 import { devtools, persist } from 'zustand/middleware'
 
