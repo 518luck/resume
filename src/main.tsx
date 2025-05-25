@@ -3,7 +3,13 @@ import { RouterProvider } from 'react-router-dom'
 
 import router from '@/routers/index'
 import '@/styles/variables.scss'
+import ThemeInitializer from '@/theme/ThemeInitializer'
+
+// 首次渲染
 
 createRoot(document.getElementById('root')!).render(
-  <RouterProvider router={router}></RouterProvider>
+  <>
+    <ThemeInitializer></ThemeInitializer>
+    <RouterProvider router={router}></RouterProvider>
+  </>
 )
