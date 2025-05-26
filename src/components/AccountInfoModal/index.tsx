@@ -1,8 +1,28 @@
+import {
+  MailOutlined,
+  UserOutlined,
+  PictureOutlined,
+  SettingOutlined,
+  GithubOutlined,
+  MoonOutlined,
+} from '@ant-design/icons'
+
+import { MenuItem } from './components/MenuItem/index'
 import style from './AccountInfoModal.module.scss'
 
 import yanjing from '@/assets/test/眼镜.jpeg'
-
 const AccountInfoModal = () => {
+  const mainMenu = [
+    { icon: <UserOutlined />, text: '我的主页' },
+    { icon: <MailOutlined />, text: '联系方式' },
+    { icon: <PictureOutlined />, text: '我的经历' },
+  ]
+  const settingsMenu = [
+    { icon: <SettingOutlined />, text: '设置' },
+    { icon: <GithubOutlined />, text: 'Github' },
+    { icon: <MoonOutlined />, text: '黑夜模式' },
+  ]
+
   return (
     <div className={style.wrap}>
       <div className={style.nav}>
@@ -16,39 +36,27 @@ const AccountInfoModal = () => {
             <img src={yanjing} alt='' />
           </div>
           <div className={style.iconCon}>
-            <p>不吃香菜</p>
-            <h2>备注</h2>
+            <p>蜻蜓大队长</p>
+            <h2>Frontend</h2>
           </div>
-          <div className={style.line}></div>
-          <div className={style.title}>
-            <p>标题</p>
-          </div>
-          <div className={style.menu}>
-            <div className={style.item}>
-              <div className={style.light}></div>
-              <div className={style.licon}>
-                <span
-                  className={`${style.iconfont} ${style.iconWenjian1}`}></span>
-              </div>
-              <div className={style.con}>Payouts</div>
-              <div className={style.ricon}></div>
-            </div>
-          </div>
-          <div className={style.line}></div>
-          <div className={style.title}>
-            <p>Sever 6</p>
-          </div>
-          <div className={style.server}>
-            <div className={style.item}>
-              <div className={style.light}></div>
-              <div className={style.licon}>
-                <span
-                  className={`${style.iconfont} ${style.iconWenjian1}`}></span>
-              </div>
-              <div className={style.con}>Payouts</div>
-              <div className={style.ricon}></div>
-            </div>
-          </div>
+        </div>
+        <div className={style.line}></div>
+        <div className={style.title}>
+          <p>标题</p>
+        </div>
+        <div className={style.menu}>
+          {mainMenu.map((item, index) => (
+            <MenuItem key={index} icon={item.icon} text={item.text} />
+          ))}
+        </div>
+        <div className={style.line}></div>
+        <div className={style.title}>
+          <p>Sever 6</p>
+        </div>
+        <div className={style.serve}>
+          {settingsMenu.map((item, index) => (
+            <MenuItem key={index} icon={item.icon} text={item.text} />
+          ))}
         </div>
       </div>
     </div>
