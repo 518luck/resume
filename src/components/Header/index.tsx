@@ -1,9 +1,12 @@
-import {Buttom } from '@'
+import { Button } from 'antd'
+
+import useThemeStore from '@/store/useThemeStore'
 function Header() {
+  const { theme, toggle } = useThemeStore()
   return (
     <div>
       Header占位
-      <button></button>
+      <Button onClick={toggle}>{theme === 'dark' ? '黑夜' : '白天'}</Button>
     </div>
   )
 }

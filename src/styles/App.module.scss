@@ -1,5 +1,6 @@
 .appContainer {
   display: flex;
+  color: var(--text-color);
   flex-direction: column;
   min-height: 100vh;
   background: var(--bg-color);
