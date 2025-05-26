@@ -3,9 +3,9 @@ import { RouterProvider } from 'react-router-dom'
 
 import router from '@/routers/index'
 import '@/styles/variables.scss'
-import ThemeInitializer from '@/theme/ThemeInitializer'
 
-// 首次渲染
+// 初始化
+import ThemeInitializer from '@/theme/ThemeInitializer'
 
 createRoot(document.getElementById('root')!).render(
   <>
