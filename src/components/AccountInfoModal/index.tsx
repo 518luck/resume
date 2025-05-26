@@ -7,8 +7,9 @@ import {
   MoonOutlined,
 } from '@ant-design/icons'
 
-import { MenuItem } from './components/MenuItem/index'
 import style from './AccountInfoModal.module.scss'
+import { MenuItem } from './components/MenuItem/index'
+import { ThemeSwitching } from './components/ThemeSwitching'
 
 import yanjing from '@/assets/test/眼镜.jpeg'
 const AccountInfoModal = () => {
@@ -20,7 +21,6 @@ const AccountInfoModal = () => {
   const settingsMenu = [
     { icon: <SettingOutlined />, text: '设置' },
     { icon: <GithubOutlined />, text: 'Github' },
-    { icon: <MoonOutlined />, text: '黑夜模式' },
   ]
 
   return (
@@ -57,6 +57,7 @@ const AccountInfoModal = () => {
           {settingsMenu.map((item, index) => (
             <MenuItem key={index} icon={item.icon} text={item.text} />
           ))}
+          <ThemeSwitching icon={<MoonOutlined />}></ThemeSwitching>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import Footer from '@/layouts/Footer'
 import styles from '@/styles/App.module.scss'
 
 // 测试链接
-import AccountInfoModal from '@/components/AccountInfoModal'
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
       />
       实时展示区
       <br />
-      <AccountInfoModal />
     </div>
   )
 }
