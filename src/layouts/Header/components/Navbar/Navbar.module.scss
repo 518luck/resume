@@ -1,0 +1,23 @@
+.content {
+  height: 70px;
+  .TopBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3); // 添加半透明白色边框
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); // 添加白色发光效果
+    .navItem {
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #201f1f;
+        color: #ffffff;
+        border-radius: 50px;
+      }
+    }
+  }
+}
