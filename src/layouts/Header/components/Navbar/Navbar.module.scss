@@ -1,20 +1,25 @@
 .content {
-  height: 70px;
   .TopBody {
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3); // 添加半透明白色边框
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); // 添加白色发光效果
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    padding: 0 10px;
     .navItem {
       padding: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100%;
+      border-radius: 50px;
       &:hover {
-        background-color: #201f1f;
+        background-color: #050505;
         color: #ffffff;
         border-radius: 50px;
       }
