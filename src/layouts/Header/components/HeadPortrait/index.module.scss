@@ -1,3 +1,13 @@
+.avatarImg {
+  padding: 4px;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  :global(.ant-avatar) {
+    border-radius: 20px !important;
+    overflow: hidden;
+  }
+  cursor: pointer;
+}
 .modalOverlay {
   position: fixed;
   top: 0;

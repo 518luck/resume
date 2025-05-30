@@ -10,7 +10,6 @@ const Header = () => {
         <Navbar />
       </div>
       <div className={style.rightSection}>
-        右侧模块
         <HeadPortrait />
       </div>
     </div>
