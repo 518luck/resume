@@ -5,6 +5,8 @@
   --border-color: 1px solid rgba(0, 0, 0, 0.1);
   --shadow-glow: 0 0 15px rgba(100, 181, 246, 0.5);
   --hover-bg-color: #1e87d280;
+  --avatar-box-shadow: 0 0 10px rgba(135, 206, 250, 0.6),
+    0 0 20px rgba(135, 206, 250, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 [data-theme='dark'] {
   --bg-color: #312b33;
@@ -13,4 +15,6 @@
   --border-color: 1px solid rgba(255, 255, 255, 0.3);
   --shadow-glow: 0 0 10px rgba(255, 255, 255, 0.5);
   --hover-bg-color: #050505;
+  --avatar-box-shadow: 0 0 10px rgba(255, 165, 0, 0.6),
+    0 0 20px rgba(255, 165, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
