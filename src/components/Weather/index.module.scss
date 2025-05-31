@@ -1,0 +1,44 @@
+.centre {
+  .video {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .text {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      .Container {
+        display: flex;
+        flex-direction: column;
+        .Primary {
+          display: flex;
+          align-items: flex-end;
+          .Condition {
+            font-weight: 600;
+            margin-right: 3px;
+            line-height: 1;
+          }
+          .temperature {
+            font-size: 10px;
+            position: relative;
+            top: -3px;
+          }
+        }
+        .Secondary {
+          font-size: 10px;
+          span {
+            font-weight: 10px;
+          }
+        }
+      }
+    }
+  }
+}
