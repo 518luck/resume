@@ -8,6 +8,8 @@ export const getWeather = async (latitude: number, longitude: number) => {
     lat: latitude,
     lon: longitude,
     appid: import.meta.env.VITE_WEATHER_KEY,
+    lang: 'zh',
+    units: 'metric',
   }
 
   const response = await axios.get<WeatherData>(BASE_URL, {

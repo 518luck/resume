@@ -1,0 +1,17 @@
+export const weatherConditionMap = {
+  Clear: '晴天',
+  Clouds: '多云',
+  Rain: '雨',
+  Drizzle: '小雨',
+  Thunderstorm: '雷雨',
+  Snow: '雪',
+  Mist: '薄雾',
+  Smoke: '烟雾',
+  Haze: '霾',
+  Dust: '扬尘',
+  Fog: '雾',
+  Sand: '沙尘',
+  Ash: '火山灰',
+  Squall: '狂风',
+  Tornado: '龙卷风',
+}

@@ -7,9 +7,10 @@ type Location = [number, number] | null
 
 interface LocationStore {
   location: Location
+  weatherData: WeatherData | null
+
   setLocationStore: (newLocation: Location) => void
   getWeather: () => Promise<WeatherData | null>
-  weatherData: WeatherData | null
 }
 
 const useLocationStore = create<LocationStore>()(
